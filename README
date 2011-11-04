@@ -35,6 +35,24 @@ A simple example that demonstrates most of the features:
 	else
 		System.out.println("It does not match");
 
+You can include the libary in maven by adding the following to your pom.xml:
+
+  <repositories>
+    <repository>
+      <id>thirdparty</id>
+      <url>http://nexus.bedatadriven.com/content/repositories/thirdparty</url>
+    </repository>
+  </repositories>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.mindrot.bcrypt</groupId>
+      <artifactId>bcrypt</artifactId>
+      <version>0.3</version>
+    </dependency>
+  </dependencies>
+
+
 There is also a C#/.NET port by Derek Slager:
 
 http://derekslager.com/blog/posts/2007/10/bcrypt-dotnet-strong-password-hashing-for-dotnet-and-mono.ashx
